@@ -23,7 +23,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(to bottom, #172b36 0%, #d9e8e3 100%);
+        background: linear-gradient(to bottom, #3a0070 0%, #f8a0cc 100%);
       }
 
       #container {
@@ -85,6 +85,8 @@
       DeepSaffron: "#FF9932",
       NocturnalExpedition: "#114C5A",
       OceanicNoir: "#172B36",
+      Pink: "#f8a0cc",
+      Green: "#3a0070"
     };
 
 
@@ -92,11 +94,15 @@
     const ctx = canvas.getContext("2d");
     const scoreElement = document.getElementById("score");
 
-    const DAY_COLOR = colorPalette.MysticMint;
-    const DAY_BALL_COLOR = colorPalette.NocturnalExpedition;
+    //const DAY_COLOR = colorPalette.MysticMint;
+    const DAY_COLOR = colorPalette.Pink;
+    //const DAY_BALL_COLOR = colorPalette.NocturnalExpedition;
+    const DAY_BALL_COLOR = colorPalette.Green;
 
-    const NIGHT_COLOR = colorPalette.NocturnalExpedition;
-    const NIGHT_BALL_COLOR = colorPalette.MysticMint;
+    //const NIGHT_COLOR = colorPalette.NocturnalExpedition;
+    const NIGHT_COLOR = colorPalette.Green;
+    //const NIGHT_BALL_COLOR = colorPalette.MysticMint;
+    const NIGHT_BALL_COLOR = colorPalette.Pink;
 
     const SQUARE_SIZE = 25;
 
