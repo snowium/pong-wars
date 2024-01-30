@@ -118,15 +118,16 @@
       }
     }
 
+    let winkel = Math.random() * (13 - 12) + 12;
     let x1 = canvas.width / 4;
     let y1 = canvas.height / 2;
-    let dx1 = 12.5;
-    let dy1 = -12.5;
+    let dx1 = winkel;
+    let dy1 = -Math.abs(winkel);
 
     let x2 = (canvas.width / 4) * 3;
     let y2 = canvas.height / 2;
-    let dx2 = -12.5;
-    let dy2 = 12.5;
+    let dx2 = -Math.abs(winkel);
+    let dy2 = winkel;
 
     let iteration = 0;
 
